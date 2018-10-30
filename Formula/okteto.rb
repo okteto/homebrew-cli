@@ -4,6 +4,7 @@ class Okteto < Formula
     url "https://s3-us-west-1.amazonaws.com/okteto-cli/0.1.0/okteto-darwin-amd64"
     sha256 "d17295f0ef88f3d0e6792a48cfd1bf48a74e9d5f60fae2d7ca311ec55c8a59a8"
     version "0.1.0"
+    depends_on "syncthing"
 
     def install
         bin.install "okteto-darwin-amd64"
