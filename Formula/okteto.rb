@@ -1,9 +1,9 @@
 class Okteto < Formula
     desc "CLI for cloud native development"
     homepage "https://okteto.com"
-    url "https://s3-us-west-1.amazonaws.com/okteto-cli/0.4.1/okteto-darwin-amd64"
-    sha256 "ed80893b28d38c7709bfeda05b4baf9edf28a42e5b11afcab9fb366bbe2a37e9"
-    version "0.4.1"
+    url "https://s3-us-west-1.amazonaws.com/okteto-cli/0.4.2/okteto-darwin-amd64"
+    sha256 "d56836d1a294c2b51b7bca32760550eeb045cdac8db5a548a73277ac63606671"
+    version "0.4.2"
     depends_on "syncthing"
 
     def install
@@ -13,6 +13,6 @@ class Okteto < Formula
 
     # Homebrew requires tests.
     test do
-        assert_match "okteto version 0.4.1", shell_output("#{bin}/okteto version 2>&1", 0)
+        assert_match "okteto version 0.4.2", shell_output("#{bin}/okteto version 2>&1", 0)
     end
 end
