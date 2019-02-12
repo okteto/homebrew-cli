@@ -5,6 +5,10 @@ class Okteto < Formula
     sha256 "6cad83db2d137599c16ad011ee6029971976ea4dd5697a7585e2311eab696782"
     version "0.5.10"
     
+    devel do
+        url "https://downloads.okteto.com/cli/master/okteto-darwin-amd64"
+    end
+    
     def install
         bin.install "okteto-darwin-amd64"
         mv bin/"okteto-darwin-amd64", bin/"okteto"
