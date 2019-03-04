@@ -1,9 +1,9 @@
 class Okteto < Formula
     desc "CLI for cloud native development"
     homepage "https://okteto.com"
-    url "https://downloads.okteto.com/cli/0.6.1/okteto-darwin-amd64"
-    sha256 "df8f79849e63527efa237d827977093a713dab04ef7046327c904b3709617910"
-    version "0.6.1"
+    url "https://downloads.okteto.com/cli/0.6.2/okteto-darwin-amd64"
+    sha256 "7ea8bfa522bbe0f727467d83c44bcaaa449ffbc95db5a0050689677f1eef8d97"
+    version "0.6.2"
     
     devel do
         url "https://downloads.okteto.com/cli/master/okteto-darwin-amd64"
@@ -16,6 +16,6 @@ class Okteto < Formula
 
     # Homebrew requires tests.
     test do
-        assert_match "okteto version 0.6.1", shell_output("#{bin}/okteto version 2>&1", 0)
+        assert_match "okteto version 0.6.2", shell_output("#{bin}/okteto version 2>&1", 0)
     end
 end
