@@ -1,5 +1,5 @@
 # Okteto
-Brew tap for the [okteto](https://okteto.com) cli
+Brew tap for the [okteto cli](https://github.com/okteto/okteto)
 
 ## Usage
 ```
