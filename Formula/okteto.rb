@@ -16,6 +16,6 @@ class Okteto < Formula
 
     # Homebrew requires tests.
     test do
-        assert_match "okteto version 1.7.4", shell_output("#{bin}/okteto version 2>&1", 0)
+        assert_match "okteto version 1.7.5", shell_output("#{bin}/okteto version 2>&1", 0)
     end
 end
