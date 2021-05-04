@@ -5,10 +5,10 @@ class Okteto < Formula
   license "Apache-2.0"
 
   if Hardware::CPU.arm?
-    sha256 "b5b8ce7a4926cca31a6a4dad6143e6e49c13009e0ded15ff212079e78c5e43fd"
+    sha256 "9b8129fc889282f552b78e8b6959c33c9cd841218fd7cdc73057db860fd45a09"
     url "https://github.com/okteto/okteto/releases/download/1.12.9/okteto-Darwin-arm64"
   else
-    sha256 "134da5f01508f5138cdd4392e50f6237e4e0bb2cfb4cdfffd86cde9b14768ec7"
+    sha256 "a41afbb55ef7cf0e99f48848c916cc542022c440e0828cac81a95ea7041c23dc"
     url "https://github.com/okteto/okteto/releases/download/1.12.9/okteto-Darwin-x86_64"
   end
 
