@@ -1,15 +1,15 @@
 class Okteto < Formula
   desc "Develop and test your code directly in Kubernetes"
   homepage "https://github.com/okteto/okteto"
-  version "2.25.3"
+  version "2.25.4"
   license "Apache-2.0"
 
   if Hardware::CPU.arm?
-    sha256 "dedf7d0c3d0559fa7756487218ed4daec4d91cc755e2c0459f8ce4d977ca9ee5"
-    url "https://github.com/okteto/okteto/releases/download/2.25.3/okteto-Darwin-arm64"
+    sha256 "20a3988600d57679b950e6631ef516abf22507489adb2d7861c01cabd02b5baa"
+    url "https://github.com/okteto/okteto/releases/download/2.25.4/okteto-Darwin-arm64"
   else
-    sha256 "26622e787c8efeb853fb6839a1e8c96acb7799144fcc5a3dca1057bf8d6aaf57"
-    url "https://github.com/okteto/okteto/releases/download/2.25.3/okteto-Darwin-x86_64"
+    sha256 "d33cdd0a56d1a1be5c99ff7a99976be5f60056db5dc7e468fd2e624e6c08d552"
+    url "https://github.com/okteto/okteto/releases/download/2.25.4/okteto-Darwin-x86_64"
   end
 
   head do
@@ -32,6 +32,6 @@ class Okteto < Formula
 
   # Homebrew requires tests.
   test do
-      assert_match "okteto version 2.25.3", shell_output("#{bin}/okteto version 2>&1", 0)
+      assert_match "okteto version 2.25.4", shell_output("#{bin}/okteto version 2>&1", 0)
   end
 end
